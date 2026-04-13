@@ -11,11 +11,14 @@
     <style>
         /* --- BASES & COULEURS --- */
         body {
-            background-color: #f0f2f5; 
+            background-image: url('https://images.pexels.com/photos/34661669/pexels-photo-34661669.jpeg');
+            background-size: cover; /* L'image prend tout l'écran */
+            background-attachment: fixed; /* Le fond ne bouge pas quand on scroll */
+            background-position: center; /* L'image est bien centrée */
             margin: 0;
             font-family: 'Poppins', sans-serif;
             color: #2c3e50;
-            transition: background-color 0.4s, color 0.4s; /* Transition douce pour le mode sombre */
+            transition: background-color 0.4s, color 0.4s;
         }
 
         /* --- HEADER FIXE --- */
@@ -38,6 +41,14 @@
 
         /* --- CONTENU --- */
         main { max-width: 900px; margin: 0 auto; padding: 20px; text-align: center; }
+        main { 
+            background: rgba(255, 255, 255, 0.8); /* Un fond blanc transparent */
+            border-radius: 20px;
+            padding: 20px;
+            margin-top: 20px;
+            max-width: 900px; 
+            margin: 20px auto; 
+        }
 
         .conteneur { display: flex; justify-content: center; gap: 20px; margin: 40px 0; }
         .boite { background: white; padding: 20px; flex: 1; border-radius: 12px; box-shadow: 0px 5px 15px rgba(0,0,0,0.05); }
